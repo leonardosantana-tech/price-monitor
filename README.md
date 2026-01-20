@@ -45,7 +45,8 @@ Utilizado para armazenar preços no arquivo `prices.json` em formato simples, pe
 {
     "amazon": 4299.00
 }
-🏠 Arquitetura
+
+## 🏠 Arquitetura
 O projeto é modular e escalável:
 
 scraper → módulo de captura de dados.
@@ -56,7 +57,7 @@ notifier → módulo de envio de alertas.
 
 monitor.py → orquestrador que coordena a execução.
 
-⚙️ Como Rodar o Projeto
+## ⚙️ Como Rodar o Projeto
 1. Clonar repositório
 Bash
 
@@ -84,7 +85,7 @@ Bash
 
 python src/monitor.py
 
-⏱ Para rodar em Segundo Plano
+## ⏱ Para rodar em Segundo Plano
 Para rodar de forma automatizada, você pode usar:
 
 Windows: Task Scheduler (Agendador de Tarefas). Crie uma tarefa diária ou a cada hora para executar o script.
@@ -93,7 +94,7 @@ Linux/Mac: Cron jobs.
 
 Python Puro: Opcionalmente, você pode transformar em serviço contínuo adicionando um loop while True + time.sleep(3600) no código para rodar a cada hora.
 
-📝 Problemas e Resoluções
+## 📝 Problemas e Resoluções
 Web scraping bloqueado → resolvido com API oficial via RapidAPI.
 
 Formato de preço → normalizado para float e salvo em prices.json.
@@ -102,7 +103,7 @@ Envio de alertas seguro → email via SMTP usando Senha de App (não a senha nor
 
 Segurança de dados → implementação de leitura via variáveis de ambiente (os.getenv) para proteger chaves de API.
 
-💡 Aprendizados
+## 💡 Aprendizados
 Integração real com APIs externas REST.
 
 Manipulação de JSON para armazenar dados históricos.
@@ -113,7 +114,7 @@ Segurança no desenvolvimento (uso de .env e .gitignore).
 
 Diferença prática entre scraping de HTML vs APIs oficiais.
 
-📊 Possíveis Extensões
+## 📊 Possíveis Extensões
 [ ] Monitoramento de mais produtos e sites simultaneamente.
 
 [ ] Geração de gráficos de histórico de preços (Matplotlib/Pandas).
