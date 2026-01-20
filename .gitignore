@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env
+venv/
+env/
+*.py[cod]
+*$py.class
+
+# VSCode
+.vscode/
+
+# Data local
+data/prices.json
+debug_*.html
+
+# Outros
+*.log
+
+data/*.json
+
+.DS_Store

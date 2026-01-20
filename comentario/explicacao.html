@@ -1,0 +1,27 @@
+<!-- monitor.py
+ ├── chama scraper (Amazon, Magalu, etc)
+ ├── recebe preços
+ ├── salva no data/prices.json
+ ├── compara com preço antigo
+ └── se baixar → chama notifier.py (email)
+
+monitor.py = cérebro do sistema
+
+scraper/ = coleta dados
+
+data/ = guarda histórico
+
+notifier.py = avisa
+
+utils.py = ajuda geral -->
+
+<!-- Ordem ideal:
+1'amazon.py → conseguir pegar um preço
+
+2'prices.json → salvar esse preço
+
+3'utils.py → leitura/escrita do JSON
+
+4'monitor.py → comparar preços
+
+5'notifier.py → enviar email -->
