@@ -41,7 +41,7 @@ A terceira opção foi escolhida porque é mais estável, rápida e segura, sem 
 
 Utilizado para armazenar preços no arquivo `prices.json` em formato simples, permitindo futuras análises ou gráficos:
 
-```json
+json
 {
     "amazon": 4299.00
 }
